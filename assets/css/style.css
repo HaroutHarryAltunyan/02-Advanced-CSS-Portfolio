@@ -1,0 +1,48 @@
+
+:root {
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+  }
+
+  /* set content highlight color and background */
+::selection {
+    background-color: var(--bright-turquoise);
+    color: var(--outer-space);
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    /* Refer to CSS values by the name of the custom property we assigned it */
+    background: var(--dark-blue);
+    color: var(--white);
+  }
+  
+  nav {
+    display: flex;
+    /* Align the child elements to the right side of the parent */
+    justify-content: flex-end;
+    background-color: #7fd8b1;
+  }
+  
+  nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
